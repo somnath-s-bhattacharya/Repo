@@ -1,4 +1,5 @@
 {  
+   "AssignmentEntryData":{
    "assignmentType":"S",
    "copartCompanyCode":"COPARTDE",
    "okToPayCharges": true,
@@ -240,4 +241,5 @@
       "Testing f"
    ]
 	
+}
 }

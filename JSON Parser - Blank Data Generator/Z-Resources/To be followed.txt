@@ -1,0 +1,5 @@
+1. Create XPath Excel
+2. Find nodes in XML using XPath Excel where Column Required says 'N'
+3. Delete data in selected node
+4. Create file for each deleted node - Name file with blank field 
+5. Create JSON file for each such XML file
