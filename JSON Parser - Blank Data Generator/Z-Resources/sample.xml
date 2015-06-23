@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<assignmentEntryData>
+<AssignmentEntryData>
 <assignmentType>S</assignmentType>
 <copartCompanyCode>COPARTDE</copartCompanyCode>
 <okToPayCharges>true</okToPayCharges>
@@ -234,4 +234,4 @@
 <includeOnLots>false</includeOnLots>
 </serviceOrders>
 <lotNotes>Testing f</lotNotes>
-</assignmentEntryData>
+</AssignmentEntryData>
