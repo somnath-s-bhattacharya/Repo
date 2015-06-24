@@ -28,6 +28,7 @@ import org.json.XML;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+
 import com.JSONtoXMLParser.JSONtoXMLConverter;
 
 /*
@@ -36,34 +37,39 @@ author @Somnath Bhattacharjee
 
 public class LogicSwitch 
 {	
+	/*Variable Declarations*/
 	static String inputFile = "D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml";
 	static String outputFile = null;
 	static List<Cell> cells = new ArrayList<Cell>();
 	static String output_xml=null;
 	public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 	public static String jsonPrettyPrintString = null;
+	static String fileNameAppender = null;
+	
 	
 	public static void main(String[] args) throws Exception { 
-		
+		/*Read InputJSON File*/
 		JSONtoXMLConverter JXC = new JSONtoXMLConverter();
 		JXC.readFile("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputJSONFile//InputJSON.txt");
 		JXC.JSONtoXMLParser();
 		
+		/*Read XPath Excel File*/
 	    //test file is located in your project path         
 	    FileInputStream fileIn = new FileInputStream("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//XPath.xls");
 	    //read file 
 	    POIFSFileSystem fs = new POIFSFileSystem(fileIn); 
 	    HSSFWorkbook filename = new HSSFWorkbook(fs);
-	    //open sheet 0 which is first sheet of your worksheet
+	    //select your worksheet
 	    HSSFSheet sheet = filename.getSheet("X-Path");
-	    //we will search for column index containing string "Your Column Name" in the row 0 (which is first row of a worksheet
+	    //search for column index containing string "Your Column Name" in the row 0 (which is first row of a worksheet
 	    String columnWanted = "SourceXPath";
 	    Integer columnNo = null;
 	    //output all not null values to the list
 	    Row firstRow = sheet.getRow(0);
-	    
-	    for(Cell cell:firstRow){
-	        if (cell.getStringCellValue().equals(columnWanted)){
+	    for(Cell cell:firstRow)
+	    {
+	        if (cell.getStringCellValue().equals(columnWanted))
+	        {
 	            columnNo = cell.getColumnIndex();
 	        }
 	    }
@@ -79,7 +85,8 @@ public class LogicSwitch
 	    }
 	   System.out.println(cells);
 	   System.out.println("XPath stored in List");
-	    }else{
+	    }else
+	    {
 	        System.out.println("could not find column " + columnWanted + " in first row of " + fileIn.toString());
 	    }
 /*======================================================================================================================================================================= */
@@ -98,8 +105,14 @@ public class LogicSwitch
 		    XPath xpath = XPathFactory.newInstance().newXPath();
 		    String rtXPath = cells.get(i).toString();
 		    NodeList nodes = (NodeList)xpath.evaluate(rtXPath, doc, XPathConstants.NODESET);
+		    
 		    System.out.println("Identified Node:" +cells.get(i)+nodes.getLength());
 		    
+		    String appender1 = rtXPath.replaceAll("AssignmentEntryData", "");
+		    String appender2 = appender1.replaceAll("/", "_");
+		    fileNameAppender = appender2.replaceAll("___", "");
+		    
+
 		    /*================================================================================================================*/
 		    
 		    // make the change at selected node
@@ -112,7 +125,7 @@ public class LogicSwitch
 		    
 		   // save the output XML
 	      Transformer xformer = TransformerFactory.newInstance().newTransformer();
-	      outputFile = "D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputXMLFile//OutputXML"+i+".xml";
+	      outputFile = "D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputXMLFile//OutputXML_"+i+"_"+fileNameAppender+".xml";
 	      xformer.transform(new DOMSource(doc), new StreamResult(new File(outputFile)));
 	      System.out.println("Output XML File generated");
 	      /*=====================================================================================================================*/
@@ -129,7 +142,7 @@ public class LogicSwitch
 		        }
 		        System.out.println("XML stored in StringBuilder");
 		        output_xml = sb.toString();
-		        System.out.println(output_xml);
+		        //System.out.println(output_xml);
 		    } 
 		    finally 
 		    {
@@ -142,12 +155,13 @@ public class LogicSwitch
 			try {
 	        	JSONObject xmlJSONObj = XML.toJSONObject(output_xml);
 	            String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
-	            System.out.println(jsonPrettyPrintString);  
+	            //System.out.println(jsonPrettyPrintString);  
+	            
 	            //create JSON file
 	            BufferedWriter writer = null;
 	            try
 	            {
-	                writer = new BufferedWriter(new FileWriter("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputJSONFile//OutputJSON"+i+".txt"));
+	                writer = new BufferedWriter(new FileWriter("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputJSONFile//OutputJSON_"+i+"_"+fileNameAppender+".txt"));
 	                writer.write(jsonPrettyPrintString);
 	                System.out.println("Output JSON file saved");
 	            }
@@ -170,9 +184,7 @@ public class LogicSwitch
 	            System.out.println(je1.toString());
 	        }
 			/*========================================================================================================================*/
-			
-		    
 	
-}
-}
+	    }
+	}
 }
