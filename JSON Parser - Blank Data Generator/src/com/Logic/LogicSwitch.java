@@ -31,14 +31,14 @@ import org.xml.sax.InputSource;
 
 import com.JSONtoXMLParser.JSONtoXMLConverter;
 
-/*
-author @Somnath Bhattacharjee
-*/
+	/*
+	author @Somnath Bhattacharjee
+	*/
 
 public class LogicSwitch 
 {	
 	/*Variable Declarations*/
-	static String inputFile = "D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml";
+	static String inputFile = "D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml";
 	static String outputFile = null;
 	static List<Cell> cells = new ArrayList<Cell>();
 	static String output_xml=null;
@@ -50,12 +50,14 @@ public class LogicSwitch
 	public static void main(String[] args) throws Exception { 
 		/*Read InputJSON File*/
 		JSONtoXMLConverter JXC = new JSONtoXMLConverter();
-		JXC.readFile("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputJSONFile//InputJSON.txt");
+		String inputJSON = "D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputJSONFile//InputJSON.txt"; 
+		JXC.readFile(inputJSON);
 		JXC.JSONtoXMLParser();
 		
 		/*Read XPath Excel File*/
-	    //test file is located in your project path         
-	    FileInputStream fileIn = new FileInputStream("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//XPath.xls");
+	    //test file is located in your project path
+		String XPathfile = "D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//XPath.xls";
+	    FileInputStream fileIn = new FileInputStream(XPathfile);
 	    //read file 
 	    POIFSFileSystem fs = new POIFSFileSystem(fileIn); 
 	    HSSFWorkbook filename = new HSSFWorkbook(fs);
@@ -125,7 +127,7 @@ public class LogicSwitch
 		    
 		   // save the output XML
 	      Transformer xformer = TransformerFactory.newInstance().newTransformer();
-	      outputFile = "D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputXMLFile//OutputXML_"+i+"_"+fileNameAppender+".xml";
+	      outputFile = "D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputXMLFile//OutputXML_"+i+"_"+fileNameAppender+".xml";
 	      xformer.transform(new DOMSource(doc), new StreamResult(new File(outputFile)));
 	      System.out.println("Output XML File generated");
 	      /*=====================================================================================================================*/
@@ -160,8 +162,9 @@ public class LogicSwitch
 	            //create JSON file
 	            BufferedWriter writer = null;
 	            try
-	            {
-	                writer = new BufferedWriter(new FileWriter("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputJSONFile//OutputJSON_"+i+"_"+fileNameAppender+".txt"));
+	            {	
+	            	String outputJSON = "D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//OutputJSONFile//OutputJSON_"+i+"_"+fileNameAppender+".txt";
+	                writer = new BufferedWriter(new FileWriter(outputJSON));
 	                writer.write(jsonPrettyPrintString);
 	                System.out.println("Output JSON file saved");
 	            }

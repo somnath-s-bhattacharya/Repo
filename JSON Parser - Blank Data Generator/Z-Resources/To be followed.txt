@@ -3,3 +3,12 @@
 3. Delete data in selected node
 4. Create file for each deleted node - Name file with blank field 
 5. Create JSON file for each such XML file
+++++Functionalities Added++++++++++++
+
+Complimentary functionalities
+1. Added GUI
+2. Take Input JSON file path and XPath.xls file path from GUI
+3. Add submit button  to execute
+4. Output JSON with blank tags will be created within the directory 
+     (directory creation for output JSON file will also be at runtime)
+     containing the XPath File.

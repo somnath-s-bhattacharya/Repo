@@ -10,9 +10,10 @@ import java.io.PrintWriter;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
-/*
- author @Somnath Bhattacharjee
- */
+	/*
+	 author @Somnath Bhattacharjee
+	 */
+
 public class JSONtoXMLConverter 
 {
 	
@@ -46,7 +47,8 @@ public class JSONtoXMLConverter
         BufferedWriter writer = null;
         try
         {
-            writer = new BufferedWriter(new FileWriter("D://Somnath//LocalRepository//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml"));
+        	String inputXML ="D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml";
+            writer = new BufferedWriter(new FileWriter(inputXML));
             writer.write( xml);
             System.out.println("Input XML file prepared");
         }

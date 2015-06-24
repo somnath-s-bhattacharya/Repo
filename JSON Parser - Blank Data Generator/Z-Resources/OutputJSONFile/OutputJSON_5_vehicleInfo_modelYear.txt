@@ -1,0 +1,236 @@
+{"AssignmentEntryData": {
+    "assignmentType": "S",
+    "bidInfo": {
+        "buyItNowAmount": 15000,
+        "isBtba": "Y",
+        "reserve": 10000
+    },
+    "charges": {
+        "checks": {
+            "amount": 400,
+            "number": "1234SA123",
+            "payee": "ABC Company",
+            "type": "advance"
+        },
+        "facilityGate": 999,
+        "facilityGateVat": 999.5,
+        "labor": 999,
+        "laborVat": 999,
+        "misc": 50,
+        "miscComments": "Extra amount",
+        "miscVat": 5,
+        "storage": 999.99,
+        "storageType": "Flat",
+        "storageVat": 15,
+        "tearDown": 999,
+        "tearDownVat": 99,
+        "totalCharges": 830,
+        "totalTax": 66.5,
+        "towing": 999,
+        "towingVat": 999
+    },
+    "claimLossInfo": {
+        "claimNumber": "ABC123432",
+        "dateClaimReported": 20150305,
+        "dateOfLoss": 20150305,
+        "lossType": {
+            "code": "C",
+            "name": "COLLISION"
+        },
+        "primaryDamageType": {
+            "code": "WA",
+            "name": {}
+        },
+        "referenceNumber": {},
+        "secondaryDamageType": {
+            "code": "VN",
+            "name": {}
+        }
+    },
+    "copartCompanyCode": "COPARTDE",
+    "isVatApplicable": true,
+    "lotNotes": "Testing f",
+    "okToPayCharges": true,
+    "pickupInfo": {
+        "facilityInfo": {
+            "code": 5003,
+            "name": "Lisa Dev Yard"
+        },
+        "holdForPickup": false,
+        "holdForPickupDate": {},
+        "holdForPickupReason": {},
+        "location": {
+            "account": {
+                "accountNumber": 67798798678,
+                "bankCountry": {},
+                "bankName": "Rachna Bank",
+                "confirmAccountNumber": 67798798678,
+                "confirmIbanAccountNumber": "uiawer789834",
+                "confirmRoutingNumber": "hg7878",
+                "ibanAccountNumber": "uiawer789834",
+                "routingNumber": "hg7878",
+                "taxId": "jkh78678678"
+            },
+            "address": {
+                "city": "xyz",
+                "country": "USA",
+                "line1": "address 123",
+                "line2": "klaf",
+                "line3": {},
+                "postalCode": 75063,
+                "state": "TX"
+            },
+            "contact": {
+                "altPhone": 1234567891,
+                "altPhoneExt": 12,
+                "email": "abclmn@abc.com",
+                "middleName": "Kumar",
+                "primaryPhone": 1234567890,
+                "primaryPhoneExt": 123
+            },
+            "locationType": "PICKUP",
+            "name": "my location 2",
+            "promisedTripDate": 20150310
+        },
+        "pickupRequired": "YES",
+        "residence": "YES"
+    },
+    "seller": {
+        "adjuster": {
+            "adjusterContactInfo": {
+                "altPhone": {},
+                "altPhoneExt": {},
+                "email": "rachna.shar12356@abc.com",
+                "middleName": "test WS",
+                "primaryPhone": 1234567890,
+                "primaryPhoneExt": {}
+            },
+            "displayName": "Test WS",
+            "firstName": "Test WS",
+            "lastName": {}
+        },
+        "code": 700002,
+        "companyCode": "AAAAA01",
+        "companyName": "Seller Company Name",
+        "countryCode": "DE",
+        "name": "Test From WS",
+        "taxId": 987
+    },
+    "serviceOrders": [
+        {
+            "amount": 999,
+            "amountEditable": true,
+            "comments": "Test Comments Test Comments",
+            "contact": "Mr Abc",
+            "countryId": 19,
+            "glTypeCode": "ADP",
+            "glTypeId": 2,
+            "includeOnLots": true,
+            "instructions": "instructions",
+            "name": "Bh",
+            "priority": "Standard",
+            "sellerId": 6,
+            "soType": "A",
+            "status": "approved",
+            "statusUpdatedDate": 20150305,
+            "type": "Delivery",
+            "userNote": "Notes",
+            "vehicleId": 5
+        },
+        {
+            "amount": 999.99,
+            "amountEditable": false,
+            "comments": "Comments 1 Test Comments Test Comments Test Comments",
+            "contact": "Mr Abc",
+            "countryId": 7,
+            "glTypeCode": "ADP",
+            "glTypeId": 2,
+            "includeOnLots": false,
+            "instructions": "Clean well",
+            "name": "ku",
+            "priority": "Standard",
+            "sellerId": 6,
+            "soType": "A",
+            "status": "approved",
+            "statusUpdatedDate": 20150305,
+            "type": "Clean up",
+            "userNote": "clean",
+            "vehicleId": 5
+        }
+    ],
+    "vehicleInfo": {
+        "actualCostOfVehicle": 30000,
+        "bodyStyle": {},
+        "co2Emission": {},
+        "color": {"code": "GRAY"},
+        "cylinders": 6,
+        "driveType": {
+            "code": "A",
+            "name": "4 Wheeler"
+        },
+        "engine": "V6",
+        "euronorm": {
+            "code": "E1",
+            "name": "EURO 1"
+        },
+        "firstRegistrationDate": 20141025,
+        "fuelType": {
+            "code": "P",
+            "name": "Petroleum"
+        },
+        "horsePower": 12,
+        "insured": {
+            "firstName": "Insured first",
+            "insuredContactInfo": {
+                "altPhone": {},
+                "altPhoneExt": {},
+                "email": {},
+                "primaryPhone": 9876546789,
+                "primaryPhoneExt": {}
+            },
+            "lastName": "Insured Last"
+        },
+        "isInsuredAcompany": false,
+        "isOwnerACompany": false,
+        "isValueAddedTaxEligible": true,
+        "itemValue": 30000,
+        "keys": "YES",
+        "licensePlateNumber": "DSV 1234",
+        "make": {
+            "code": "HOND",
+            "name": "HONDA"
+        },
+        "model": {
+            "code": "ALT",
+            "name": "Accent"
+        },
+        "modelYear": {},
+        "odometerReading": 8769,
+        "owner": {
+            "firstName": "Owner First",
+            "lastName": "Owner Last",
+            "ownerContactInfo": {
+                "altPhone": {},
+                "altPhoneExt": {},
+                "email": {},
+                "primaryPhone": 9876546789,
+                "primaryPhoneExt": {}
+            }
+        },
+        "registrationNumber": 654464587676,
+        "repairCost": 13453,
+        "residueValue": 4000,
+        "towable": "NO",
+        "transmissionType": {
+            "code": "A",
+            "name": "AUTOMATIC"
+        },
+        "validateVIN": false,
+        "vehicleType": {
+            "code": "V",
+            "name": "Automobile"
+        },
+        "vin": "HJFG6545646H",
+        "yearOfManifacture": 2014
+    }
+}}
