@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
@@ -35,10 +34,10 @@ public class JSONtoXMLConverter
 	    }
 	 }
 	
-	public static void JSONtoXMLParser() throws JSONException, FileNotFoundException {
+	public static String JSONtoXMLParser() throws JSONException, FileNotFoundException {
 		String str = sb.toString();
 		JSONObject json = new JSONObject(str);
-        String xml = XML.toString(json);
+		String xml = XML.toString(json);
         
         /*
          Write out XML file
@@ -47,7 +46,7 @@ public class JSONtoXMLConverter
         BufferedWriter writer = null;
         try
         {
-        	String inputXML ="D://Code//Repo//JSON Parser - Blank Data Generator//Z-Resources//InputXMLFile//InputXML.xml";
+        	String inputXML ="Z-Resources/InputXMLFile/InputXML.xml";
             writer = new BufferedWriter(new FileWriter(inputXML));
             writer.write( xml);
             System.out.println("Input XML file prepared");
@@ -66,6 +65,7 @@ public class JSONtoXMLConverter
             {
             }
         }
+        return xml;
 	}
 	
 

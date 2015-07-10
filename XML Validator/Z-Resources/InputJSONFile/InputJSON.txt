@@ -1,0 +1,66 @@
+{
+   "MemberCreationRequest": {
+   "memberId": 700020010,
+   "memberType":    {
+      "code": "P",
+      "description": "Premier Membership"
+   },
+   "firstName": "Test",
+   "middleName": "",
+   "lastName": "Test",
+   "companyName": "Test",
+   "physicalAddress":    {
+      "line1": "alkdjf lkasdjf",
+      "line2": "",
+      "line3": null,
+      "city": "Dallas",
+      "stateType":       {
+         "code": "TX",
+         "description": null
+      },
+      "countryType":       {
+         "code": "USA",
+         "description": null
+      },
+      "zip1": "75063",
+      "zip2": null,
+      "latitude": null,
+      "longitude": null
+   },
+   "mailingAddress":    {
+      "line1": "alkdsfjh alksdjf",
+      "line2": "",
+      "line3": null,
+      "city": "Dallas",
+      "stateType":       {
+         "code": "TX",
+         "description": null
+      },
+      "countryType":       {
+         "code": "USA",
+         "description": null
+      },
+      "zip1": "75063",
+      "zip2": null,
+      "latitude": null,
+      "longitude": null
+   },
+   "contact":    {
+      "primaryPhone": "123456789",
+      "primaryPhoneExtn": null,
+      "secondaryPhone": null,
+      "secondaryPhoneExtn": null,
+      "email": "shot3@gmail.com"
+   },
+   "status":    {
+      "code": "I",
+      "description": ""
+   },
+   "bidLimits": null,
+   "licenses": [],
+   "junkPrograms": [],
+   "termAndCondtions": [],
+   "feePaidDate": null,
+   "taxIds": []
+}
+}
