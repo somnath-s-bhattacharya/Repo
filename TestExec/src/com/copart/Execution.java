@@ -42,13 +42,13 @@ public class Execution {
 	    post.setHeader("countryCode", "DE");
 	    post.setHeader("language", "en");
 	    post.setHeader("userEmail", "rachna.sharma@copart.com");
-	    post.setHeader("Content-Length", "1173");
 	    post.setHeader("Host", "iediws002.ied.copart.com:10090");
 	    post.setHeader("Connection", "Keep-Alive");
 	    post.setHeader("User-Agent", "Apache-HttpClient/4.1.1 (java 1.5)");
 	    
 	    post.setEntity(new StringEntity(sb1.toString(), "UTF-8"));
 	    try
+	    
 	    {
 	    HttpClient client = HttpClientBuilder.create().build();
 	    HttpResponse httpresponse = client.execute(post);
