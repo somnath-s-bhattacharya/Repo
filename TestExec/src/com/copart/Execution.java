@@ -26,7 +26,7 @@ public class Execution {
 	        String line = br1.readLine();
 	        while (line != null) {
 	            sb1.append(line.trim());
-	            //sb1.append("\n");
+	            sb1.append("\n");
 	            line = br1.readLine();
 	        }
 	        System.out.println("JSON stored in Payload StringBuilder");
@@ -36,15 +36,7 @@ public class Execution {
 	    }
 	    
 	    HttpPost post = new HttpPost("http://iediws002.ied.copart.com:10090/assignment-ws/assignment/");
-	    post.setHeader("Content-type", "application/json");
-	    post.setHeader("Accept-Encoding", "gzip,deflate");
-	    post.setHeader("source", "WOM");
-	    post.setHeader("countryCode", "DE");
-	    post.setHeader("language", "en");
-	    post.setHeader("userEmail", "rachna.sharma@copart.com");
-	    post.setHeader("Host", "iediws002.ied.copart.com:10090");
-	    post.setHeader("Connection", "Keep-Alive");
-	    post.setHeader("User-Agent", "Apache-HttpClient/4.1.1 (java 1.5)");
+
 	    
 	    post.setEntity(new StringEntity(sb1.toString(), "UTF-8"));
 	    try
