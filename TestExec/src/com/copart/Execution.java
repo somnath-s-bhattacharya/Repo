@@ -36,7 +36,15 @@ public class Execution {
 	    }
 	    
 	    HttpPost post = new HttpPost("http://iediws002.ied.copart.com:10090/assignment-ws/assignment/");
-
+	    post.setHeader("Accept-Encoding","gzip,deflate");
+	    post.setHeader("source","WOM");
+	    post.setHeader("countryCode","DE");
+	    post.setHeader("language","en");
+	    post.setHeader("userEmail","rachna.sharma@copart.com");
+	    post.setHeader("Content-Type","application/json");
+	    post.setHeader("Host","iediws002.ied.copart.com:10090");	    
+	    post.setHeader("Connection","Keep-Alive");
+	    post.setHeader("User-Agent","Apache-HttpClient/4.1.1 (java 1.5)");
 	    
 	    post.setEntity(new StringEntity(sb1.toString(), "UTF-8"));
 	    try
@@ -44,10 +52,16 @@ public class Execution {
 	    {
 	    HttpClient client = HttpClientBuilder.create().build();
 	    HttpResponse httpresponse = client.execute(post);
-	    HttpEntity entity = httpresponse.getEntity();
-	    InputStream stream = entity.getContent();
-	    String result = convertStreamToString(stream);
-	    System.out.println(result);
+	    System.out.println("Http Response Code: " +httpresponse.getStatusLine().getStatusCode());
+	    
+		    if (httpresponse.getStatusLine().getStatusCode() != 400)
+		    {
+		    HttpEntity entity = httpresponse.getEntity();
+		    InputStream stream = entity.getContent();
+		    String result = convertStreamToString(stream);
+		    System.out.println(result);
+		    System.out.println("Record Creation Successfull");
+		    }
 	    }
 	    catch (ClientProtocolException e) {
             // writing exception to log
