@@ -9,5 +9,8 @@
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/httpcore-4.4-beta1.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/jersey-client.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/org.json.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

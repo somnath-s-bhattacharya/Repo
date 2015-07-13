@@ -1,7 +1,10 @@
 package com.copart;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,15 +16,22 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.XML;
+
+import com.JSONtoXMLParser.JSONtoXMLConverter;
 
 
-public class Execution {
+public class AssignmentCreationWithMakeModelTrim_Execution {
 	
+	public static int PRETTY_PRINT_INDENT_FACTOR = 4;
+	public static String jsonPrettyPrintString = null;
 	static StringBuilder sb1 = new StringBuilder();
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, JSONException {
 		
 		//store JSON Payload in string
-        BufferedReader br1 = new BufferedReader(new FileReader("InputJSON.txt"));
+        BufferedReader br1 = new BufferedReader(new FileReader("Z-Resources/Payload/InputJSON.txt"));
 	    try {   
 	        String line = br1.readLine();
 	        while (line != null) {
@@ -61,6 +71,12 @@ public class Execution {
 		    String result = convertStreamToString(stream);
 		    System.out.println(result);
 		    System.out.println("Record Creation Successfull");
+		    JSONtoXMLConverter JXC = new JSONtoXMLConverter();
+		    JXC.JSONtoXMLParser(result);
+		    }
+		    else
+		    {
+		    	System.out.println("Invalid Request. Modify Request or Add Headers");
 		    }
 	    }
 	    catch (ClientProtocolException e) {
@@ -99,6 +115,7 @@ public class Execution {
             }
         }
         return sb.toString();
-}
+        
+ }
 
 }
