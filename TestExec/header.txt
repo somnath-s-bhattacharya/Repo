@@ -1,7 +1,4 @@
-POST /iediws002.ied.copart.com:10090/assignment-ws/assignmentEntry/HTTP1.1
 source: WOM
 countryCode: DE
 language: en
 userEmail: rachna.sharma@copart.com
-Content-Type: application/json
-Accept: application/json
