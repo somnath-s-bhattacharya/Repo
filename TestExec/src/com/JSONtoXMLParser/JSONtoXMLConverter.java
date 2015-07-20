@@ -22,34 +22,8 @@ public class JSONtoXMLConverter
 		String str = response;
 		JSONObject json = new JSONObject(str);
 		String xml = XML.toString(json);
-        
-        /*
-         Write out XML file
-         */
-        
-        BufferedWriter writer = null;
-        try
-        {
-        	String responseXML ="Z-Resources/Response/ResponseXML.xml";
-            writer = new BufferedWriter(new FileWriter(responseXML));
-            writer.write( xml);
-            System.out.println("Response XML file prepared");
-        }
-        catch ( IOException e)
-        {
-        }
-        finally
-        {
-            try
-            {
-                if ( writer != null)
-                writer.close( );
-            }
-            catch ( IOException e)
-            {
-            }
-        }
         return xml;
+
 	}
 	
 

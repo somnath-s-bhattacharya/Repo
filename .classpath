@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="JSON Parser - Blank Data Generator/src"/>
+	<classpathentry kind="src" path="MVCExample/src"/>
+	<classpathentry kind="src" path="TestExec/src"/>
+	<classpathentry kind="src" path="TutorialPoint/src"/>
+	<classpathentry kind="src" path="XML Validator/src"/>
+	<classpathentry kind="src" path="XPathGenerator/src"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="JSON Parser - Blank Data Generator/Jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/httpclient-4.3-beta1.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/httpclient-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/httpcore-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/jersey-client.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/jt400-6.4.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="TestExec/Jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="XML Validator/Jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/org.apache.commons.io.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="XPathGenerator/Jars/xom-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="XPathGenerator/bin"/>
+</classpath>

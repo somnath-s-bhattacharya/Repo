@@ -12,5 +12,9 @@
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/json-lib.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/jt400-6.4.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/TestExec/Jars/xom-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

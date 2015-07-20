@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/httpclient-4.3-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/httpclient-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/httpcore-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/jersey-client.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/jt400-6.4.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/LocalRepository/Repo/RESTful API Client/Jars/xom-1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
