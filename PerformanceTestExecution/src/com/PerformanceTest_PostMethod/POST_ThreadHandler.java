@@ -3,7 +3,9 @@ package com.PerformanceTest_PostMethod;
 import java.io.IOException;
 import com.PerformanceTest_PostMethod.PerformanceTestRunnable;
 
-
+/**
+ * author @ Somnath Bhattacharjee
+ */
 public class POST_ThreadHandler {
 	
 	public static int i;	

@@ -16,6 +16,10 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 import com.View.PerformanceTestExecutor;
 
+/**
+ * author @ Somnath Bhattacharjee
+ */
+
 class PerformanceTestRunnable implements Runnable{
 
 	public static StringBuilder sb1 = new StringBuilder();
@@ -64,20 +68,23 @@ class PerformanceTestRunnable implements Runnable{
 	    post.setHeader("Username",PTE.username);
 	    post.setHeader("Password",PTE.pwd);
 	    
-	    try {
+	    try 
+	    {
 	    	post.setEntity(new StringEntity(readData(), "UTF-8"));
-		} catch (UnsupportedCharsetException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+		} 
+	    catch (UnsupportedCharsetException e1) 
+	    {
+			System.out.println("Data Reading Exception:" +e1.toString());
+		} 
+	    catch (IOException e1) 
+	    {
+			System.out.println("Data Reading/POSTING:" +e1.toString());
 		}
 	    
 	    try
 	    {	
 	    	
-	    	@SuppressWarnings("static-access")
+	    	//@SuppressWarnings("static-access")
 			int j = PTTH2.i;
 	    	long startTime = System.currentTimeMillis();
 		    HttpClient client = HttpClientBuilder.create().build();
@@ -98,6 +105,7 @@ class PerformanceTestRunnable implements Runnable{
 	        }
 	        catch ( IOException e)
 	        {
+	        	System.out.println("FileWriting Exception Type 1: " +e.toString());
 	        }
 	        finally
 	        {
@@ -108,32 +116,37 @@ class PerformanceTestRunnable implements Runnable{
 	            }
 	            catch ( IOException e)
 	            {
+	            	System.out.println("FileWriting Exception Type 2: " +e.toString());
 	            }
 	        }
 		  }
 	    
 	    catch (ClientProtocolException e) {
-            // writing exception to log
-            //e.printStackTrace();
+	    	e.printStackTrace();
+            String serverErrorLog = "User- "+ (PTTH2.i) +" --> ClientProtocolException" + e.toString();
+            sb2.append(serverErrorLog);
         } catch (IOException e) {
-			// TODO Auto-generated catch block
 			//e.printStackTrace();
+        	String ioErrorLog = "User- "+ (PTTH2.i) +" --> Server Refused Connection" + e.toString();
+            sb2.append(ioErrorLog);
 		}catch(Exception e){
 			//e.printStackTrace();
+			String clientErrorLog = "User- "+ (PTTH2.i) +" --> Java Socket Problem" + e.toString();
+            sb2.append(clientErrorLog);
 		}
 	    long endTimeLoop = System.currentTimeMillis();
 	    long timedelay = (endTimeLoop - startTimeLoop);
-	    if(timedelay>PTE.totalExecutionTime)
+	    if(timedelay > (PTE.totalExecutionTime*60*1000))
 	    {
 	    	timeUP = true;
-	    	break;
 	    }
 	    try {
 			Thread.sleep(PTE.testDelaytime);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (InterruptedException e) 
+	    {
+			System.out.println("Thread Interruption Exception: " +e.toString());;
 		}
+	    break;
 		}
 	  }
 			
