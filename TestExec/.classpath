@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/httpclient-4.3-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/httpclient-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/httpcore-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/jersey-client.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/jt400-6.4.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/org-apache-commons-lang.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

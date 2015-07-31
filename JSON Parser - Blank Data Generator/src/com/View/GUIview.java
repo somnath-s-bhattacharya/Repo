@@ -1,22 +1,15 @@
 package com.View;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-
 import java.awt.GridLayout;
-
 import javax.swing.JLabel;
-
 import java.awt.Font;
-
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
-
 import com.BlankTag.JSON_BlankTagGenerator;
-
 import java.awt.Color;
 import java.awt.Canvas;
 import java.awt.Image;

@@ -40,7 +40,7 @@ public class Launcher {
 	            sb.append("\n");
 	            line = br.readLine();
 	        }
-	        System.out.println("JSON stored in StringBuilder");
+	        //System.out.println("JSON stored in StringBuilder");
 	        
 	    } 
 	    finally {
@@ -62,7 +62,7 @@ public class Launcher {
         	String inputXML ="InputXML.xml";
             writer = new BufferedWriter(new FileWriter(inputXML));
             writer.write( xml);
-            System.out.println("Input XML file prepared");
+            //System.out.println("Input XML file prepared");
         }
         catch ( IOException e)
         {
