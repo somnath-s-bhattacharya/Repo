@@ -42,7 +42,13 @@ class PerformanceTestRunnable implements Runnable{
 	}
 	
 	
-	public void run() {
+	public void run() 
+	{
+		
+		boolean timeUP = false;
+		long startTimeLoop = System.currentTimeMillis();
+		while(!timeUP)
+		{
 		POST_ThreadHandler PTTH2 = new POST_ThreadHandler();
 		PerformanceTestExecutor PTE = new PerformanceTestExecutor();
 		HttpPost post = new HttpPost(PTE.webURL);
@@ -78,7 +84,7 @@ class PerformanceTestRunnable implements Runnable{
 		    HttpResponse httpresponse = client.execute(post);
 		    long endTime = System.currentTimeMillis();
 		    long duration = (endTime - startTime);
-		    log = "User- "+ (j+1) +"\t\t"+"Http Response Code\t" +httpresponse.getStatusLine().getStatusCode() +"\t\t" + "Time Elapsed" + "\t" + duration+ "\n";
+		    log = "User- "+ (j) +"\t\t"+"Http Response Code\t" +httpresponse.getStatusLine().getStatusCode() +"\t\t" + "Time Elapsed" + "\t" + duration+ "\n";
 		    System.out.println(log);
 		    sb2.append(log);
 		    
@@ -114,6 +120,20 @@ class PerformanceTestRunnable implements Runnable{
 			//e.printStackTrace();
 		}catch(Exception e){
 			//e.printStackTrace();
+		}
+	    long endTimeLoop = System.currentTimeMillis();
+	    long timedelay = (endTimeLoop - startTimeLoop);
+	    if(timedelay>PTE.totalExecutionTime)
+	    {
+	    	timeUP = true;
+	    	break;
+	    }
+	    try {
+			Thread.sleep(PTE.testDelaytime);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		}
 	  }
 			

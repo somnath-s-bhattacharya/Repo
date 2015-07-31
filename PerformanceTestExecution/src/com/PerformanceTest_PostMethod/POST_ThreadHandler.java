@@ -1,10 +1,8 @@
 package com.PerformanceTest_PostMethod;
 
 import java.io.IOException;
-import java.util.Scanner;
-
 import com.PerformanceTest_PostMethod.PerformanceTestRunnable;
-import com.View.PerformanceTestExecutor;
+
 
 public class POST_ThreadHandler {
 	

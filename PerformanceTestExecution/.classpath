@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/poi-ooxml-3.5-beta5.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/xom-1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Somnath/Workspace/TestExec/Jars/org-apache-commons-lang.jar"/>
+	<classpathentry kind="src" path="img"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
