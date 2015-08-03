@@ -58,12 +58,8 @@ class PerformanceTestRunnable implements Runnable{
 		HttpPost post = new HttpPost(PTE.webURL);
 	    post.setHeader("Connection", "Keep-Alive");
 	    post.setHeader("Content-Type","application/json");
-	    post.setHeader("Accept-Encoding","gzip,deflate");
 	    post.setHeader("User-Agent","Apache-HttpClient/4.1.1 (java 1.5)");
-	    post.setHeader("partnerCode","en");
-	    post.setHeader("source","mobile");
-	    post.setHeader("countryCode","US");
-	    post.setHeader("Host","lvqc2r001:10081");
+	    post.setHeader("Host","...");
 	    post.setHeader("Authorization","Basic REVNTzp3ZWxjb21lNQ==");
 	    post.setHeader("Username",PTE.username);
 	    post.setHeader("Password",PTE.pwd);
