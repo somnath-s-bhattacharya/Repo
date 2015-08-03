@@ -23,7 +23,7 @@ import com.View.PerformanceTestExecutor;
 class PerformanceTestRunnable implements Runnable{
 
 	public static StringBuilder sb1 = new StringBuilder();
-	public static StringBuilder sb2 = new StringBuilder();
+	public static StringBuffer sb2 = new StringBuffer();
 	public static String log = null;
 	
 	public static String readData() throws IOException
