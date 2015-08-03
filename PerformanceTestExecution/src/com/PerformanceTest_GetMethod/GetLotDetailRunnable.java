@@ -24,7 +24,7 @@ public static StringBuilder sb2 = new StringBuilder();
 public static String log = null;	
 	public void run() {
 		
-		HttpGet get = new HttpGet("https://sws.qa.copart.com/lotdetail-ws/lot/48295985");
+		HttpGet get = new HttpGet("Enter URL");
 	    get.setHeader("Connection", "Keep-Alive");
 	    get.setHeader("Content-Type","application/json");
 	    get.setHeader("User-Agent","Apache-HttpClient/4.1.1 (java 1.5)");
