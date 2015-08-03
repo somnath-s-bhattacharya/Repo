@@ -31,7 +31,7 @@ public static String log = null;
 	    get.setHeader("language","en");
 	    get.setHeader("source","mobile");
 	    get.setHeader("countryCode","US");
-	    get.setHeader("Host","sws.qa.copart.com");
+	    get.setHeader("Host","...");
 	    get.setHeader("Accept-Encoding","gzip,deflate");
 	    get.setHeader("Authorization","Basic ZGVtbzp3ZWxjb21lNQ==");
 	    get.setHeader("username","demo");
