@@ -136,8 +136,8 @@ public class GUIview {
 		frame.getContentPane().add(lblXPathFilePath);
 		
 		JLabel label_1 = new JLabel("");
-		Image img = new ImageIcon(this.getClass().getResource("/Cognizant_Logo.png")).getImage();
-		label_1.setIcon(new ImageIcon(img));
+		//Image img = new ImageIcon(this.getClass().getResource("")).getImage();
+		//label_1.setIcon(new ImageIcon(img));
 		label_1.setBounds(454, 0, 128, 131);
 		frame.getContentPane().add(label_1);
 		
