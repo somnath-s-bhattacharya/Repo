@@ -1,0 +1,19 @@
+{     
+ "sellerId": "AAA0",
+      "zipCode": "94534",
+       "make": "HOND",
+    "model": "ACCORD",
+    "lotYear": 2016,
+    "damageCodes": [
+        "AO"
+       
+    ],
+     
+   
+    "vehicleIdNbr": "",
+    "repairCost": 123.2,
+    "acv": 860.2,
+    "mileage":0.0,
+    "sortType":"",
+    "sortBy":""
+}

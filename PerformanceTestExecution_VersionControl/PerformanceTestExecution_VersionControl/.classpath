@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="img"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/commons-logging-1.2-bin.zip"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpclient-4.3-beta1.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcore-4.4-beta1.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/jersey-client.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/jersey-core-1.16.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/json-lib.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/jt400-6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/lightcouch-0.1.8.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/org-apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/org.json.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/LocalRepository/MobileAutomation/NTC-AppiumAutomation_CouchDBIntegrated/JARS/selenium-2.45.0/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/LocalRepository/MobileAutomation/NTC-AppiumAutomation_CouchDBIntegrated/JARS/selenium-2.45.0/java-client-1.5.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/LocalRepository/MobileAutomation/NTC-AppiumAutomation_CouchDBIntegrated/JARS/selenium-2.45.0/java-client-2.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/fluent-hc-4.5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/httpclient-4.5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/httpclient-cache-4.5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/httpclient-win-4.5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/httpmime-4.5.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/httpcomponents-client-4.5/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/json-path-0.8.0.jar"/>
+	<classpathentry kind="lib" path="/Users/user2/Desktop/PC151323-BackUp For OS Upgradation/Somnath/Workspace/PerformanceTestExecution/Jars/json-smart-1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
