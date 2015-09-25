@@ -1,0 +1,53 @@
+package com.Prob;
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class VenturesityProblem1 {
+
+	public static void main(String[] args) {
+		final Set<String> strings = new TreeSet<String>();
+		userInput(strings);
+		output(strings);
+	}
+
+	private static void userInput(final Set<String> strings) {
+		final Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter a limit (limit should be less than or equal to 5000):");
+		int limit = scanner.nextInt();
+		while (limit > 0) 
+		{
+			if (isLimitValid(limit)) {
+				System.out.print("Please enter " + limit + " Strings:");
+				scanner.nextLine();
+				while (limit > 0) {
+					final String str = scanner.nextLine();
+					if (str.length() <= 100) {
+						strings.add(str);
+					} else {
+						System.out.print("Please enter a valid String (string length should be less than or equal to 100):");
+						continue;
+					}
+					limit--;
+				}
+			} else {
+				System.out.print("Please enter a valid limit (limit should be less than or equal to 5000):");
+				limit = scanner.nextInt();
+				continue;
+			}
+		}
+		scanner.close();
+	}
+
+	private static void output(final Set<String> strings) {
+		System.out.println("Below is the set which is sorted and without duplicate strings");
+		for (String str : strings) {
+			System.out.println(str);
+		}
+	}
+
+	private static boolean isLimitValid(final int limit) {
+		return limit <= 5000 ? true : false;
+	}
+}
