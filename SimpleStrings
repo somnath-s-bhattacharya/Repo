@@ -1,0 +1,131 @@
+package com.Venturesity;
+
+import java.util.*;
+
+public class SimpleStrings {
+
+	public static void main(String[] args) 
+	{
+		inputHandler();		
+	}
+
+	private static void inputHandler()
+	{
+		System.out.println("Please Input a String(alphabets only) without any white spaces (of length 2-6 characters only): ");
+		Scanner userin = new Scanner(System.in);
+		String str = userin.nextLine();
+		userInput(str);
+	}
+
+	public static Set<String> Permutation(String str) {
+		Set<String> Result = new HashSet<String>();
+		if (str == null) {
+			return null;
+		} else if (str.length() == 0) {
+			Result.add("");
+			return Result;
+		}
+
+		char firstChar = str.charAt(0);
+		String rem = str.substring(1);
+		Set<String> words = Permutation(rem);
+		for (String newString : words) {
+			for (int i = 0; i <= newString.length(); i++) {
+				Result.add(CharAdd(newString, firstChar, i));
+			}
+		}
+		return Result;
+	}
+
+	public static String CharAdd(String str, char c, int j) {
+		String first = str.substring(0, j);
+		String last = str.substring(j);
+		return first + c + last;
+	}
+
+	private static void userInput(String str)
+	{
+		if(isStringLengthValid(str)==true)
+		{
+			if(isSpacePresent(str)==false)
+			{
+				if(isAlpha(str)==true)
+				{
+					Set<String> strings = new TreeSet<String>();
+					for (String s : Permutation(str))
+					{
+						for (int i = 0; i < s.length(); i++) {
+							for (int j = i+1; j <= s.length(); j++) {
+								strings.add(s.substring(i,j));
+							}
+						} 
+					}
+					System.out.println("Below is the set which is sorted and without duplicate strings");
+					for (String strin : strings) {
+						System.out.println(strin);
+					}
+
+				}
+				else
+				{
+					System.out.println("Error : String contains charaters other than alphabets.");
+					inputHandler();
+				}
+			}
+			else
+			{
+				System.out.println("Error : String contains Whitespace.");
+				inputHandler();
+
+			}
+		}
+		else
+		{
+			System.out.println("Error : String Length is not valid.");
+			inputHandler();
+
+		}
+	}
+
+	private static boolean isSpacePresent(String str)
+	{
+		if(str != null){
+			for(int i = 0; i < str.length(); i++){
+				if(Character.isWhitespace(str.charAt(i))){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	private static boolean isStringLengthValid(String str)
+	{
+		boolean flag;
+		if(str.length()<2)
+		{
+			flag=false;
+		}
+		else if(str.length()>6)
+		{
+			flag=false;
+		}
+		else
+		{
+			flag =true;
+		}
+		return flag;
+	}
+
+	private static boolean isAlpha(String str) {
+		char[] chars = str.toCharArray();
+
+		for (char c : chars) {
+			if(!Character.isLetter(c)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+}
