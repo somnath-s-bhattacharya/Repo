@@ -77,6 +77,13 @@ Unit and API test:
    
 ## Deployment and Usage
 
+This is a maven project. Follow the below mentioned steps to set up at local instance:
+1. Clone project.
+2. Import in workspace.
+3. Right click on project. Select Run As -> Maven Clean (Option 6).
+4. Right click on project. Select Run As -> Maven Build (Option 5). Put Value "clean install" as shown in screenshot below:
+![Alt text](https://github.com/somnath-s-bhattacharya/Repo/blob/master/LRU_Cache_API/Screen%20Shot.png "Optional title")
+
 Deploy [war file](https://github.com/somnath-s-bhattacharya/Repo/blob/master/LRU_Cache_API/target/LRU_Cache_API-0.0.1-SNAPSHOT.war) on Tomcat 7 and use any rest client extensions to access the api resources at:
 1. http://localhost:8080/LRU_Cache_API-0.0.1-SNAPSHOT/getcacheservice/{param}
 2. http://localhost:8080/LRU_Cache_API-0.0.1-SNAPSHOT/putcacheservice/{param}
