@@ -44,13 +44,11 @@
 1. Insert to Doubly Linked List
    
    Generally the time complexity of insertion to a Doubly Linked is O(n). But here since we are inserting only to the head
-   
    the time complexity becomes O(1).
 
 2. Remove from Doubly Linked List
    
    Generally the time complexity of removal from a Doubly Linked is O(n). But here since we are removing only from the tail
-   
    the time complexity becomes O(1).
 
 3. Search in ConcurrentHashMap
@@ -76,3 +74,9 @@ Unit and API test:
 3. Have not been able to write multi-threaded tests for the api resources. 
    
    Please find my other project which has multi-threading implementation at [API Performance Test Tool with Multi-Threading Implementation](https://github.com/somnath-s-bhattacharya/Repo/tree/master/PerformanceTestExecution_VersionControl)
+   
+## Deployment and Usage
+
+Deploy [war file](https://github.com/somnath-s-bhattacharya/Repo/blob/master/LRU_Cache_API/target/LRU_Cache_API-0.0.1-SNAPSHOT.war) on Tomcat 7 and use any rest client extensions to access the api resources at:
+1. http://localhost:8080/LRU_Cache_API-0.0.1-SNAPSHOT/getcacheservice/{param}
+2. http://localhost:8080/LRU_Cache_API-0.0.1-SNAPSHOT/putcacheservice/{param}
